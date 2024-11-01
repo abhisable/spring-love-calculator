@@ -8,8 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class MyTestController {
 
 	@RequestMapping("/test")
-	@ResponseBody
 	public String hello() {
-		return "Hi I am there";
+		return "Hello-World";
 	}
 }
