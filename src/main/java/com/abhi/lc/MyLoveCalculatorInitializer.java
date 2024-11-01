@@ -1,7 +1,7 @@
 package com.abhi.lc;
 
 import org.springframework.web.WebApplicationInitializer;
-import org.springframework.web.context.support.XmlWebApplicationContext;
+import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
 
 import jakarta.servlet.ServletContext;
@@ -13,8 +13,11 @@ public class MyLoveCalculatorInitializer implements WebApplicationInitializer{
 	@Override
 	public void onStartup(ServletContext servletContext) throws ServletException {
 		
-		XmlWebApplicationContext context=new XmlWebApplicationContext();
-		context.setConfigLocation("classpath:beans.xml");
+//		XmlWebApplicationContext context=new XmlWebApplicationContext();
+//		context.setConfigLocation("classpath:beans.xml");
+		
+		AnnotationConfigWebApplicationContext context=new AnnotationConfigWebApplicationContext();
+		context.register(MyConfig.class);
 		
 		DispatcherServlet myServlet=new DispatcherServlet(context);
 		
