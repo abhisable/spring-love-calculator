@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.abhi.lc</groupId>
+  <artifactId>spring-love-calculator</artifactId>
+  <versioning>
+    <versions>
+      <version>0.0.1-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20241101145930</lastUpdated>
+  </versioning>
+</metadata>
