@@ -8,9 +8,10 @@ import jakarta.servlet.ServletContext;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.ServletRegistration.Dynamic;
 
-public class MyLoveCalculatorInitializer implements WebApplicationInitializer{
+public class MyLoveCalculatorInitializer //implements WebApplicationInitializer
+{
 
-	@Override
+	
 	public void onStartup(ServletContext servletContext) throws ServletException {
 		
 //		XmlWebApplicationContext context=new XmlWebApplicationContext();
