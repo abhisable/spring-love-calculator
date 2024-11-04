@@ -18,7 +18,7 @@ public class MyLCInitializer extends AbstractAnnotationConfigDispatcherServletIn
 
 	@Override
 	protected String[] getServletMappings() {
-		String arr[]= {"/myapplication.com/*"};
+		String arr[]= {"/myapplication.com/*","/"};
 		return arr;
 	}
 
