@@ -1,3 +1,4 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -9,17 +10,17 @@
 <body>
 <h1 align="center">Welcome to Love Calculator!</h1>
 <div align="center">
-<form action="process-homepage">
+<form:form action="process-homepage" modelAttribute="userInfo">
 <p>
 <label for="yn">your name: </label>
-<input type="text" id="yn" name="yourName"/>
+<form:input  id="yn" path="yourName"/>
 </p>
 <p>
 <label for="cn">crush name: </label>
-<input type="text" id="cn" name="crushName"/>
+<form:input  id="cn" path="crushName"/>
 </p>
 <input type="submit" value="calculate"/>
-</form>
+</form:form>
 </div>
 </body>
 </html>

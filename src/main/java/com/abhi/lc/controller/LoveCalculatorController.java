@@ -1,7 +1,7 @@
 package com.abhi.lc.controller;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.abhi.lc.DTO.UserInfoDTO;
@@ -10,14 +10,12 @@ import com.abhi.lc.DTO.UserInfoDTO;
 public class LoveCalculatorController {
 
 	@RequestMapping("/")
-	public String getHomePage() {
+	public String getHomePage(@ModelAttribute("userInfo") UserInfoDTO userInfoDTO) {
 		return "home-page";
 	}
-	
+
 	@RequestMapping("/process-homepage")
-	public String processHomepage(UserInfoDTO userInfoDTO, Model model) {
-		System.out.println(userInfoDTO.getYourName()+" "+userInfoDTO.getCrushName());
-		model.addAttribute("userInfo", userInfoDTO);
+	public String processHomepage(@ModelAttribute("userInfo") UserInfoDTO userInfoDTO) {
 		return "result-page";
 	}
 

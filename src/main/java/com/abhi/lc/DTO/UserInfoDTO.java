@@ -2,8 +2,8 @@ package com.abhi.lc.DTO;
 
 public class UserInfoDTO {
 
-	private String yourName;
-	private String crushName;
+	private String yourName="Mr. X";
+	private String crushName="Ms. Y";
 	
 	
 	public UserInfoDTO() {
