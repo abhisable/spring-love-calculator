@@ -8,12 +8,12 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>spring-love-calculator Maven Webapp</name>
 	<url>http://maven.apache.org</url>
-	
+
 	<properties>
 		<maven.compiler.source>17</maven.compiler.source>
 		<maven.compiler.target>17</maven.compiler.target>
 	</properties>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -35,9 +35,30 @@
 			<scope>provided</scope>
 		</dependency>
 
+		<!-- 
+		<dependency>
+			<groupId>org.glassfish.web</groupId>
+			<artifactId>jakarta.servlet.jsp.jstl</artifactId>
+			<version>3.0.1</version>
+		</dependency>
+-->
+		<dependency>
+			<groupId>jakarta.servlet.jsp.jstl</groupId>
+			<artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+			<version>3.0.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.glassfish.web</groupId>
+			<artifactId>jakarta.servlet.jsp.jstl</artifactId>
+			<version>3.0.1</version>
+		</dependency>
 
 	</dependencies>
+
 	<build>
 		<finalName>spring-love-calculator</finalName>
 	</build>
+
+
 </project>

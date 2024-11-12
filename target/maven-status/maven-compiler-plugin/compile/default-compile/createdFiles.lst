@@ -1,2 +1,8 @@
+com/abhi/lc/MyConfig.class
+com/abhi/lc/DTO/UserRegistrationDTO.class
+com/abhi/lc/controller/RegistrationController.class
 com/abhi/lc/controller/MyTestController.class
+com/abhi/lc/DTO/UserInfoDTO.class
 com/abhi/lc/MyLoveCalculatorInitializer.class
+com/abhi/lc/controller/LoveCalculatorController.class
+com/abhi/lc/MyLCInitializer.class
