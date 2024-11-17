@@ -1,13 +1,26 @@
 package com.abhi.lc.DTO;
 
+
+import jakarta.validation.constraints.AssertTrue;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
+
 public class UserInfoDTO {
 
-	private String yourName="Mr. X";
-	private String crushName="Ms. Y";
+	@NotBlank(message = "your name can't be null")
+	@Size(min=3,max=15,message="yourName should be between 3 and 15")
+	private String yourName;
+	
+	@NotBlank(message = "crush name can't be null")
+	@Size(min=3,max=15,message="crush should be between 3 and 15")
+	private String crushName;
+	
+	@AssertTrue(message=" please check term and condition to proceed with our app")
+	private boolean termAndContitionCheck;
 	
 	
 	public UserInfoDTO() {
-		System.out.println("Hi UserInfoDTO constructor called spring internally creating this object");
+		//System.out.println("Hi UserInfoDTO constructor called spring internally creating this object");
 	}
 	public String getYourName() {
 		return yourName;
@@ -24,6 +37,12 @@ public class UserInfoDTO {
 	@Override
 	public String toString() {
 		return "UserInfoDTO [yourName=" + yourName + ", crushName=" + crushName + "]";
+	}
+	public boolean isTermAndContitionCheck() {
+		return termAndContitionCheck;
+	}
+	public void setTermAndContitionCheck(boolean termAndContitionCheck) {
+		this.termAndContitionCheck = termAndContitionCheck;
 	}
 	
 	

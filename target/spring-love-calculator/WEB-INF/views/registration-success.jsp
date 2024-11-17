@@ -1,6 +1,8 @@
-<%@ taglib uri="https://jakarta.ee/jstl/core" prefix="c" %>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"  
+    pageEncoding="UTF-8" isELIgnored = "false" %> 
+    
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,9 +16,9 @@
  Your userName: ${userRegInfo.userName}<br/>
  Your password: ${userRegInfo.password}<br/>
  Your country: ${userRegInfo.country}<br/>
- Your hobbies: ${userRegInfo.hobbies}<br/>
- <c:forEach var = "temp" items="${userRegInfo.hobbies}">
-         ${temp }
+ Your hobbies: 
+ <c:forEach var="temp" items="${userRegInfo.hobbies}" >
+   ${temp}
  </c:forEach>
  <br/>
  Your gender: ${userRegInfo.gender}<br/>

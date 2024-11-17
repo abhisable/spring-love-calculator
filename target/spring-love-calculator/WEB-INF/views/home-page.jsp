@@ -10,7 +10,7 @@
 <body>
 <h1 align="center">Welcome to Love Calculator!</h1>
 <div align="center">
-<form:form action="process-homepage" modelAttribute="userInfo">
+<form:form action="process-homepage" modelAttribute="userInfo" >
 <p>
 <label for="yn">your name: </label>
 <form:input  id="yn" path="yourName"/>
