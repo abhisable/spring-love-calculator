@@ -22,6 +22,9 @@
  </c:forEach>
  <br/>
  Your gender: ${userRegInfo.gender}<br/>
+ <br/>
+ Your email: ${userRegInfo.communicationDTO.email}<br/>
+ Your phone: ${userRegInfo.communicationDTO.phone}<br/>
  
 </div>
 </body>

@@ -8,6 +8,8 @@ public class UserRegistrationDTO {
 	private String country;
 	private String[] hobbies;
 	private String gender;
+	private CommunicationDTO communicationDTO;
+	
 	public String getUser() {
 		return user;
 	}
@@ -43,5 +45,11 @@ public class UserRegistrationDTO {
 	}
 	public void setGender(String gender) {
 		this.gender = gender;
+	}
+	public CommunicationDTO getCommunicationDTO() {
+		return communicationDTO;
+	}
+	public void setCommunicationDTO(CommunicationDTO communicationDTO) {
+		this.communicationDTO = communicationDTO;
 	}
 }

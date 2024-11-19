@@ -55,6 +55,22 @@
 			<br />
 			<br />
 			
+			<h3>Communication Details</h3>
+			
+			<br />
+			<br />
+			
+			<label>Email:</label>
+			<form:input path="communicationDTO.email" />
+			
+			
+			
+			<label>phoneNumber:</label>
+			<form:input path="communicationDTO.phone" />
+			
+			<br />
+			<br />
+			
 			<input type="submit"/>
 		</form:form>
 	</div>
