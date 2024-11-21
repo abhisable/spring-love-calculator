@@ -1,5 +1,7 @@
 package com.abhi.lc.DTO;
 
+import com.abhi.lc.Validator.Age;
+
 public class UserRegistrationDTO {
 
 	private String user;
@@ -9,6 +11,9 @@ public class UserRegistrationDTO {
 	private String[] hobbies;
 	private String gender;
 	private CommunicationDTO communicationDTO;
+	
+	@Age(lower=30,upper=60,message="age should be between 30 and 60")
+	private Integer age;
 	
 	public String getUser() {
 		return user;
@@ -51,5 +56,11 @@ public class UserRegistrationDTO {
 	}
 	public void setCommunicationDTO(CommunicationDTO communicationDTO) {
 		this.communicationDTO = communicationDTO;
+	}
+	public Integer getAge() {
+		return age;
+	}
+	public void setAge(Integer age) {
+		this.age = age;
 	}
 }
