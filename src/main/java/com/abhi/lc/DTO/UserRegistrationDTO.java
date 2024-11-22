@@ -12,7 +12,7 @@ public class UserRegistrationDTO {
 	private String gender;
 	private CommunicationDTO communicationDTO;
 	
-	@Age(lower=30,upper=60,message="age should be between 30 and 60")
+	@Age(lower=30,upper=60,message="{invalidAgeMessage}")
 	private Integer age;
 	
 	public String getUser() {

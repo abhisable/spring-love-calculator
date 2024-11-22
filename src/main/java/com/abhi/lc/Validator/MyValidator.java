@@ -4,8 +4,8 @@ import jakarta.validation.ConstraintValidator;
 import jakarta.validation.ConstraintValidatorContext;
 
 public class MyValidator implements ConstraintValidator<Age, Integer> {
-	private int lower;
-	private int upper;
+	private Integer lower;
+	private Integer upper;
 
 	@Override
 	public void initialize(Age age) {
