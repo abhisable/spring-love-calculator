@@ -21,6 +21,7 @@
 		<form:form action="registration-success" modelAttribute="userRegInfo">
 			<label>User:</label>
 			<form:input path="user" />
+			<form:errors path="user" cssClass="error"/>
 			<br />
 			<br />
 

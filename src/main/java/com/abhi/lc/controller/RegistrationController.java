@@ -1,7 +1,10 @@
 package com.abhi.lc.controller;
 
+import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -39,7 +42,17 @@ public class RegistrationController {
 			}
 			return "user-registration-page";
 		}
+		
 		return "registration-success";
+	}
+	
+	@InitBinder
+	public void initBinder(WebDataBinder binder) {
+		//binder.setDisallowedFields("userName"); //by this line we are setting userName as disallowed field so it won't get binded
+		
+		StringTrimmerEditor editor=new StringTrimmerEditor(false);//passing true converts whitespaces to null object
+		binder.registerCustomEditor(String.class, "user", editor);
+		System.out.println("inside init binder ");
 	}
 
 }

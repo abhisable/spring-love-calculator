@@ -6,6 +6,14 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<style type="text/css">
+.error {
+	position: fixed;
+	text-align: left;
+	color: red;
+	margin-left: 30px;
+}
+</style>
 </head>
 <body>
 	<h1 align="center">Please fill below details for Registration!</h1>
@@ -15,47 +23,68 @@
 			<form:input path="user" />
 			<br />
 			<br />
-			
+
 			<label>User Name:</label>
 			<form:input path="userName" />
-			
+
 			<br />
 			<br />
-			
+
 			<label>Password:</label>
-			<form:password path="password"/>
-			
+			<form:password path="password" />
+
 			<br />
 			<br />
-			
+
 			<label>Country:</label>
 			<form:select path="country">
-			  <form:option value="IND">INDIA</form:option>
-			  <form:option value="USA">United State</form:option>
-			  <form:option value="SL">SriLanka</form:option>
-			  <form:option value="PAK">Pakistan</form:option>
+				<form:option value="IND">INDIA</form:option>
+				<form:option value="USA">United State</form:option>
+				<form:option value="SL">SriLanka</form:option>
+				<form:option value="PAK">Pakistan</form:option>
 			</form:select>
-			
+
 			<br />
 			<br />
-			
+
 			<label>Hobbies:</label>
-			Cricket:<form:checkbox path="hobbies" value="cricket"/>
-			Reading:<form:checkbox path="hobbies" value="reading"/>
-			Travel:<form:checkbox path="hobbies" value="travel"/>
-			Programming:<form:checkbox path="hobbies" value="programming"/>
-			
+			Cricket:<form:checkbox path="hobbies" value="cricket" />
+			Reading:<form:checkbox path="hobbies" value="reading" />
+			Travel:<form:checkbox path="hobbies" value="travel" />
+			Programming:<form:checkbox path="hobbies" value="programming" />
+
 			<br />
 			<br />
-			
+
 			<label>Gender:</label>
-			Male: <form:radiobutton path="gender" value="male"/>
-			Female: <form:radiobutton path="gender" value="female"/>
-			
+			Male: <form:radiobutton path="gender" value="male" />
+			Female: <form:radiobutton path="gender" value="female" />
+
 			<br />
 			<br />
-			
-			<input type="submit"/>
+			<label>age:</label>
+			<form:input path="age" />
+			<form:errors path="age" cssClass="error"/>
+
+			<br />
+			<br />
+			<h3>Communication Details</h3>
+
+			<br />
+			<br />
+
+			<label>Email:</label>
+			<form:input path="communicationDTO.email" />
+
+
+
+			<label>phoneNumber:</label>
+			<form:input path="communicationDTO.phone" />
+
+			<br />
+			<br />
+
+			<input type="submit" />
 		</form:form>
 	</div>
 </body>

@@ -2,8 +2,11 @@ package com.abhi.lc.DTO;
 
 import com.abhi.lc.Validator.Age;
 
+import jakarta.validation.constraints.NotEmpty;
+
 public class UserRegistrationDTO {
 
+	@NotEmpty
 	private String user;
 	private String userName;
 	private char[] password;

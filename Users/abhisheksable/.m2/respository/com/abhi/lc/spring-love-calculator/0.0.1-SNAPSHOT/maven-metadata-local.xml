@@ -3,7 +3,7 @@
   <groupId>com.abhi.lc</groupId>
   <artifactId>spring-love-calculator</artifactId>
   <versioning>
-    <lastUpdated>20241116144928</lastUpdated>
+    <lastUpdated>20241124073532</lastUpdated>
     <snapshot>
       <localCopy>true</localCopy>
     </snapshot>
@@ -11,12 +11,12 @@
       <snapshotVersion>
         <extension>pom</extension>
         <value>0.0.1-SNAPSHOT</value>
-        <updated>20241116144928</updated>
+        <updated>20241124073532</updated>
       </snapshotVersion>
       <snapshotVersion>
         <extension>war</extension>
         <value>0.0.1-SNAPSHOT</value>
-        <updated>20241116144928</updated>
+        <updated>20241124073532</updated>
       </snapshotVersion>
     </snapshotVersions>
   </versioning>
