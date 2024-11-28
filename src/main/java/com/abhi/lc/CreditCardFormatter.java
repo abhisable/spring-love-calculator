@@ -12,7 +12,7 @@ public class CreditCardFormatter implements Formatter<CreditCard> {
 	@Override
 	public String print(CreditCard object, Locale locale) {
 		// TODO Auto-generated method stub
-		return object.getFirstFourDigits()+"-"+object.getSecondFourDigits()+"-"+object.getThirdFourDigits()+"-"+object.getLastFourDigits();
+		return "newer sample"+object;
 	}
 
 	@Override

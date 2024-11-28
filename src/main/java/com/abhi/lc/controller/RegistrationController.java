@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.abhi.lc.DTO.CommunicationDTO;
 import com.abhi.lc.DTO.Phone;
 import com.abhi.lc.DTO.UserRegistrationDTO;
+import com.abhi.lc.editors.NameCustomEditor;
 
 import jakarta.validation.Valid;
 
@@ -53,6 +54,9 @@ public class RegistrationController {
 		StringTrimmerEditor editor=new StringTrimmerEditor(false);//passing true converts whitespaces to null object
 		binder.registerCustomEditor(String.class, "user", editor);
 		System.out.println("inside init binder ");
+		
+		NameCustomEditor nameEditor=new NameCustomEditor();
+		binder.registerCustomEditor(String.class,"user", nameEditor);
 	}
 
 }
