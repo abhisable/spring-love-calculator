@@ -27,6 +27,7 @@ public class MyConfig implements WebMvcConfigurer {
 		registry.addFormatter(new MyPhoneFormatter());
 		registry.addFormatter(new CurrencyFormatter());
 		//registry.addFormatter(new CreditCardFormatter());
+		
 	}
 
 	@Bean

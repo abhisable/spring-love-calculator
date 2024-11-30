@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.abhi.lc.DTO.CommunicationDTO;
 import com.abhi.lc.DTO.Phone;
 import com.abhi.lc.DTO.UserRegistrationDTO;
+import com.abhi.lc.Validator.UserNameCustomValidator;
 import com.abhi.lc.editors.NameCustomEditor;
 
 import jakarta.validation.Valid;
@@ -57,6 +58,8 @@ public class RegistrationController {
 		
 		NameCustomEditor nameEditor=new NameCustomEditor();
 		binder.registerCustomEditor(String.class,"user", nameEditor);
+		
+		binder.addValidators(new UserNameCustomValidator());
 	}
 
 }
