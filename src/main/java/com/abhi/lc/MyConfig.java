@@ -13,7 +13,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
-@ComponentScan(basePackages = "com.abhi.lc.controller")
+@ComponentScan(basePackages = "com.abhi.lc")
 @EnableWebMvc
 public class MyConfig implements WebMvcConfigurer {
 

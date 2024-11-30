@@ -1,5 +1,6 @@
 package com.abhi.lc.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
@@ -19,6 +20,9 @@ import jakarta.validation.Valid;
 @Controller
 public class RegistrationController {
 
+	@Autowired
+	UserNameCustomValidator userNameValidator;
+	
 	@RequestMapping("/register")
 	public String registration(@ModelAttribute("userRegInfo") UserRegistrationDTO regDTO) {
 		regDTO.setUserName("demousername");
@@ -38,6 +42,9 @@ public class RegistrationController {
 	@RequestMapping("/registration-success")
 	public String processRegistration(@Valid @ModelAttribute("userRegInfo") UserRegistrationDTO regDTO,
 			BindingResult result) {
+		
+		userNameValidator.validate(regDTO, result);
+		
 		if (result.hasErrors()) {
 			for (Object error : result.getAllErrors()) {
 				System.out.println(error);
@@ -59,7 +66,7 @@ public class RegistrationController {
 		NameCustomEditor nameEditor=new NameCustomEditor();
 		binder.registerCustomEditor(String.class,"user", nameEditor);
 		
-		binder.addValidators(new UserNameCustomValidator());
+		//binder.addValidators(new UserNameCustomValidator());
 	}
 
 }
