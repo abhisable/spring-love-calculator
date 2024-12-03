@@ -8,7 +8,7 @@ import jakarta.validation.constraints.Size;
 public class UserInfoDTO {
 
 	@NotBlank(message = "your name can't be null")
-	@Size(min=3,max=15,message="yourName should be between 3 and 15")
+	@Size(min=3,max=15,message="{youName.errorMessage}")
 	private String yourName;
 	
 	@NotBlank(message = "crush name can't be null")
