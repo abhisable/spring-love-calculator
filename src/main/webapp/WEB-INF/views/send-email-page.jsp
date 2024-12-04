@@ -18,7 +18,7 @@
 <body>
 <h1 align="center">Welcome to Email Page! ${userName}</h1>
 <div align="center">
-<form:form action="/spring-love-calculator/processEmail/${userName}" modelAttribute="emailDTO">
+<form:form action="/spring-love-calculator/processEmail" modelAttribute="emailDTO">
 
 <form:input path="userEmail"/>
 <button type="submit">send</button>
