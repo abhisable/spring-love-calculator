@@ -14,7 +14,7 @@ your name: ${userInfo.getYourName()}
 <p>
 crush name: ${userInfo.getCrushName()}
 </p>
-You Guys are friends
+You Guys are ${result}
 <br>
 <br>
 <a href="/spring-love-calculator/sendEmail">click here to send mail</a>
