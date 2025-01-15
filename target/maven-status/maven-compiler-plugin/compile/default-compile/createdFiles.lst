@@ -1,5 +1,6 @@
 com/abhi/restsample/dao/StudentDaoImpl.class
 com/abhi/restsample/controllers/MyRestController.class
+com/abhi/restsample/dto/ErrorResponseClass.class
 com/abhi/restsample/dto/Student.class
 com/abhi/restsample/dao/StudentDao.class
 com/abhi/restsample/DispatcherServeletInitializer.class

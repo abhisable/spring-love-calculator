@@ -1,5 +1,6 @@
 /Users/abhisheksable/Documents/workspace-spring-tool-suite-4-4.21.0.RELEASE/spring-rest-sample/src/main/java/com/abhi/restsample/dto/Student.java
 /Users/abhisheksable/Documents/workspace-spring-tool-suite-4-4.21.0.RELEASE/spring-rest-sample/src/main/java/com/abhi/restsample/dao/StudentDao.java
+/Users/abhisheksable/Documents/workspace-spring-tool-suite-4-4.21.0.RELEASE/spring-rest-sample/src/main/java/com/abhi/restsample/dto/ErrorResponseClass.java
 /Users/abhisheksable/Documents/workspace-spring-tool-suite-4-4.21.0.RELEASE/spring-rest-sample/src/main/java/com/abhi/restsample/controllers/MyRestController.java
 /Users/abhisheksable/Documents/workspace-spring-tool-suite-4-4.21.0.RELEASE/spring-rest-sample/src/main/java/com/abhi/restsample/MyAppConfig.java
 /Users/abhisheksable/Documents/workspace-spring-tool-suite-4-4.21.0.RELEASE/spring-rest-sample/src/main/java/com/abhi/restsample/dao/StudentDaoImpl.java
